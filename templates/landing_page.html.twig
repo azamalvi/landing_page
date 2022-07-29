@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Landing Page</title>
+</head>
+<body>
+<div>
+    <h2>Some Title</h2>
+    <h3>Some Description</h3>
+    <h5>Some Image</h5>
+    {{ form_start(form) }}
+    {{ form_errors(form) }}
+
+    {{ form_row(form.firstName) }}
+    {{ form_row(form.lastName) }}
+    {{ form_row(form.email) }}
+    {{ form_row(form.agreeTerms) }}
+
+    {{ form_row(form.submit, { 'label': 'Submit' }) }}
+    {{ form_end(form) }}
+</div>
+</body>
+</html>
